@@ -24,7 +24,7 @@ class Order:
 
     @customer.setter
     def customer(self, value):
-        from coffee_shop.customer import Customer  # Moved import here
+        from coffee_shop.customer import Customer 
         if not isinstance(value, Customer):
             raise ValueError("Must be a Customer instance.")
         self._customer = value
@@ -35,7 +35,7 @@ class Order:
 
     @coffee.setter
     def coffee(self, value):
-        from coffee_shop.coffee import Coffee  # Moved import here
+        from coffee_shop.coffee import Coffee  
         if not isinstance(value, Coffee):
             raise ValueError("Must be a Coffee instance.")
         self._coffee = value

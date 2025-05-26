@@ -12,7 +12,7 @@ def test_invalid_price():
     customer = Customer("Bob")
     coffee = Coffee("Espresso")
     try:
-        Order(customer, coffee, 15.0)  # Invalid price
+        Order(customer, coffee, 15.0)  
         assert False
     except ValueError:
         assert True
